@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 14px;
+        margin: 10px 5px 4px;
+      }
+      .items {
+        background-color: aquamarine;
+        border: 1px solid;
+        height: 100px;
+      }
+      @media (max-width: 720px) and (max-height: 720px) {
+        .container {
+          grid-template-columns: 200px;
+        }
+      }
+      /* .container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+.items {
+  flex: 1;
+  background-color: aquamarine;
+  border: 1px solid;
+  height: 100px;
+}
+
+@media (max-width: 720px) and (max-height: 720px) {
+  .container {
+    flex-direction: column;
+    
+    width: 300px;
+    height: 300px; 
+  }
+} */
+      .dropdown {
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 8px;
+        font-family: Arial;
+        font-size: 24px;
+        background-color: white;
+        
+      }
+    
+   
+       option:checked { 
+    background: gray;
+    color:#ffffff;
+    
+}
+
+ option:hover{
+  background-color: blue;
+  color: #ffffff;
+ }
+
+  
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+    </div>
+  </body>
+</html>
+
+<div>
+  <select class="dropdown" >
+    <option value="IN">Country</option>
+    <option value="IN">India</option>
+    <option value="usa">United States</option>
+    <option value="uk">United Kingdom</option>
+    <option value="canada">Canada</option>
+    <option value="australia">Australia</option>
+  </select>
+</div>
